@@ -1,1 +1,1 @@
-disableTools = [ "open source vulnerabilities" ]
+disableTools = [ "bill of materials" ]
