@@ -1,1 +1,1 @@
-disableTools = [ "infer" ]
+disableTools = [ "open source vulnerabilities" ]
