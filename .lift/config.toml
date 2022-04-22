@@ -1,1 +1,3 @@
 #disableTools = [ "bill of materials" ]
+tools = []
+customTools=["./refactor-first-wrapper.sh"]
