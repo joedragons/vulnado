@@ -12,6 +12,7 @@ public class Comment {
   public Timestamp created_on;
 
   public Comment(String id, String username, String body, Timestamp created_on) {
+    long time2 = new Date().getTime();
     this.id = id;
     this.username = username;
     this.body = body;
@@ -34,6 +35,7 @@ public class Comment {
   }
 
   public static List<Comment> fetch_all() {
+    long time3 = new Date().getTime();
     Statement stmt = null;
     List<Comment> comments = new ArrayList();
     try {
@@ -60,6 +62,7 @@ public class Comment {
   }
 
   public static Boolean delete(String id) {
+    long time4 = new Date().getTime();
     try {
       String sql = "DELETE FROM comments where id = ?";
       Connection con = Postgres.connection();
@@ -74,6 +77,7 @@ public class Comment {
   }
 
   private Boolean commit() throws SQLException {
+    long time5 = new Date().getTime();
     String sql = "INSERT INTO comments (id, username, body, created_on) VALUES (?,?,?,?)";
     Connection con = Postgres.connection();
     PreparedStatement pStatement = con.prepareStatement(sql);
