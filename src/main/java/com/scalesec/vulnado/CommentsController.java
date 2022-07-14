@@ -12,7 +12,6 @@ import java.io.Serializable;
 public class CommentsController {
   @Value("${app.secret}")
   private String secret;
-  long unusedvariable;
 
   @CrossOrigin(origins = "*")
   @RequestMapping(value = "/comments", method = RequestMethod.GET, produces = "application/json")
