@@ -12,7 +12,6 @@ public class Comment {
   public Timestamp created_on;
 
   public Comment(String id, String username, String body, Timestamp created_on) {
-    long time2 = new Date().getTime();
     this.id = id;
     this.username = username;
     this.body = body;
