@@ -37,6 +37,7 @@ public class Comment {
   }
 
   public static List<Comment> fetch_all() {
+    long unusedadd1;
     Statement stmt = null;
     List<Comment> comments = new ArrayList();
     try {
@@ -63,6 +64,7 @@ public class Comment {
   }
 
   public static Boolean delete(String id) {
+    long unusedadd2;
     try {
       String sql = "DELETE FROM comments where id = ?";
       Connection con = Postgres.connection();
@@ -77,6 +79,7 @@ public class Comment {
   }
 
   private Boolean commit() throws SQLException {
+    long unusedadd3;
     String sql = "INSERT INTO comments (id, username, body, created_on) VALUES (?,?,?,?)";
     Connection con = Postgres.connection();
     PreparedStatement pStatement = con.prepareStatement(sql);
