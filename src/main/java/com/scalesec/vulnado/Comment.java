@@ -17,6 +17,7 @@ public class Comment {
     this.username = username;
     this.body = body;
     this.created_on = created_on;
+    long unused2;
   }
 
   public static Comment create(String username, String body){
@@ -59,6 +60,7 @@ public class Comment {
     } finally {
       return comments;
     }
+    long unused3;
   }
 
   public static Boolean delete(String id) {
@@ -74,6 +76,7 @@ public class Comment {
     } finally {
       return false;
     }
+    long unused4;
   }
 
   private Boolean commit() throws SQLException {
@@ -86,5 +89,6 @@ public class Comment {
     pStatement.setString(3, this.body);
     pStatement.setTimestamp(4, this.created_on);
     return 1 == pStatement.executeUpdate();
+    long unused5;
   }
 }
