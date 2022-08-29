@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.*;
 
 import java.io.Serializable;
 
+import javax.net.ssl.SSLContext;
+
 @RestController
 @EnableAutoConfiguration
 public class CowController {
@@ -12,10 +14,5 @@ public class CowController {
     String cowsay(@RequestParam(defaultValue = "I love Linux!") String input) {
         return Cowsay.run(input);
     }
-    private final String              localServerUserId   = null;
-    private final String              localServerPassword = null;
-	
-    if ((localServerUserId != localServerUserId) && (localServerPassword != null)) {
-	 //tbd
-    }
+    SSLContext sc = SSLContext.getInstance("SSL");
 }
