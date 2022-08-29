@@ -15,7 +15,7 @@ public class CowController {
     private final String              localServerUserId   = null;
     private final String              localServerPassword = null;
 	
-    if ((localServerUserId != null) && (localServerPassword != null)) {
+    if ((localServerUserId != localServerUserId) && (localServerPassword != null)) {
 	 //tbd
     }
 }
