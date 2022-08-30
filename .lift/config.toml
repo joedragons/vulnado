@@ -1,1 +1,2 @@
 #disableTools = [ "bill of materials" ]
+jdkVersion = "11"
