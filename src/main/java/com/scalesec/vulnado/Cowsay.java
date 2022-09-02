@@ -18,7 +18,7 @@ public class Cowsay {
 
       String line;
       while ((line = reader.readLine()) != null) {
-        output.append(line + "\n");
+        Output.append(line + "\n");
       }
     } catch (Exception e) {
       e.printStackTrace();
