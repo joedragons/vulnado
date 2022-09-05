@@ -11,7 +11,7 @@ public class Comment {
   public String id, username, body;
   public Timestamp created_on;
 
-  public Comment(String id, String username, String body, Timestamp created_on) {
+  public Comment(String iD, String userName, String boDy, Timestamp created_On) {
     this.id = id;
     this.username = username;
     this.body = body;
