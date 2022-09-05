@@ -20,6 +20,15 @@ public class Comment {
 
   public static Comment create(String username, String body){
     long time = new Date().getTime();
+    long time2 = new Date().getTime();
+    long time3 = new Date().getTime();
+    long time4 = new Date().getTime();
+    long time5 = new Date().getTime();
+    long time6 = new Date().getTime();
+    long time7 = new Date().getTime();
+    long time8 = new Date().getTime();
+    long time9 = new Date().getTime();
+    long time10 = new Date().getTime();
     Timestamp timestamp = new Timestamp(time);
     Comment comment = new Comment(UUID.randomUUID().toString(), username, body, timestamp);
     try {
