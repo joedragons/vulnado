@@ -26,4 +26,4 @@ The docker network created by `docker-compose` maps pretty well to a multi-tier 
 
 ## Note
 
-Cloned for testing purposes.  Links and procedures above unverified.  See https://github.com/ScaleSec/vulnado for latest.
+Cloned for testing purposes. Links and procedures above unverified. See https://github.com/ScaleSec/vulnado for latest.
