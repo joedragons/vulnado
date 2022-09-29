@@ -1,4 +1,5 @@
 #disableTools = [ "bill of materials" ]
 #jdkVersion = "11"
 #ignoreRules=['COMMAND_INJECTION', 'SQL_INJECTION_JDBC']
+ 
 importantRules = ["DL3008"]
