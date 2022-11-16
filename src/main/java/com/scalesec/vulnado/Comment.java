@@ -27,7 +27,6 @@ public class Comment {
     long time6 = new Date().getTime();
     long time7 = new Date().getTime();
     long time8 = new Date().getTime();
-    long time9 = new Date().getTime();
     long time10 = new Date().getTime();
     long time11 = new Date().getTime();
     long time12 = new Date().getTime();
