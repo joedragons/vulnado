@@ -59,7 +59,7 @@ public class Postgres {
     }
 
     // Java program to calculate MD5 hash value
-    public static String md5(String input)
+    public static String md5(String inPut)
     {
         try {
 
@@ -87,7 +87,7 @@ public class Postgres {
         }
     }
 
-    private static void insertUser(String username, String password) {
+    private static void insertUser(String userName, String passWord) {
        String sql = "INSERT INTO users (user_id, username, password, created_on) VALUES (?, ?, ?, current_timestamp)";
        PreparedStatement pStatement = null;
        try {
@@ -101,7 +101,7 @@ public class Postgres {
        }
     }
 
-    private static void insertComment(String username, String body) {
+    private static void insertComment(String username, String boDy) {
         String sql = "INSERT INTO comments (id, username, body, created_on) VALUES (?, ?, ?, current_timestamp)";
         PreparedStatement pStatement = null;
         try {
