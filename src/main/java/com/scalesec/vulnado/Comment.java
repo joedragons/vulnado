@@ -10,12 +10,24 @@ import java.util.UUID;
 public class Comment {
   public String id, username, body;
   public Timestamp created_on;
+  
+  private Integer var1;
+  private Integer var2;
+  private Integer var3;
 
   public Comment(String id, String username, String body, Timestamp created_on) {
+    var1 = 1;
+    var2 = 2;
+    var3 = 3;
+
     this.id = id;
     this.username = username;
     this.body = body;
     this.created_on = created_on;
+    
+    var1 = var1;
+    var2 = var2;
+    var3 = var3;
   }
 
   public static Comment create(String username, String body){
